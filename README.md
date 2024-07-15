@@ -13,11 +13,16 @@ npm run deploy
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Shadownc/cloudflare-npm-proxy)
 
 ## 测试是否成功：
+```
+地址后面一定要带"/"
+http(s)://npm.example.com/
+```
+
 访问`example.com`/axios
 **或者**
 ``` bash
-npm set registry http(s)://npm.example.com
-yarn config set registry http(s)://yarn.example.com
+npm set registry http(s)://npm.example.com/
+yarn config set registry http(s)://yarn.example.com/
 # 查看是否配置成功
 npm config get registry
 yarn config get registry
